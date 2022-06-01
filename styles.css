@@ -4,7 +4,7 @@
 .half {
   width: 50%;
 }
-.nav-item {
+p.nav-item {
  font-size: 15px;
 }
 body {
@@ -20,7 +20,7 @@ body {
 p {
   color: rgb(255,255,255);
   font-family: "arabic";
-  font-size: 2em;
+  font-size: 24px;
   overflow-x: wrap;
   width: 600px;
   text-align: left;
