@@ -12,7 +12,7 @@ body {
   height: 100%;
   overflow-wrap: break-word;
   color: white;
-  font-family: /*"hoefler", */"noto sans arabic", sans-serif;
+  font-family: /*"hoefler", */"garamond", serif;
 }
 p {
   color: rgb(255,255,255);
