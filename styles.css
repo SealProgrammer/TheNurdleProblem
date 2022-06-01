@@ -16,8 +16,7 @@ body {
 }
 p {
   color: rgb(255,255,255);
-  font-family: "arabic";
-  font-size: 24px;
+  font-size: 24rem;
   overflow-x: wrap;
   width: 600px;
   text-align: left;
