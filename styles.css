@@ -4,6 +4,9 @@
 .half {
   width: 50%;
 }
+.nav-item {
+ font-size: 15px;
+}
 body {
   background: rgb(69, 69, 69);
   float: left;
