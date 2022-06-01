@@ -13,6 +13,7 @@ body {
   overflow-wrap: break-word;
   color: white;
   font-family: "hoefler", "Garamond", serif;
+  font-size: 1.5em;
 }
 p {
   color: rgb(255,255,255);
