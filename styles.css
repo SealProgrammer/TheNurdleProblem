@@ -58,7 +58,14 @@ iframe {
   margin: auto;
   margin: auto;
 }
-#image-slideshow, #image-slideshow-2 {
+#image-slideshow {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  aspect-ratio: 4/3;
+}
+#image-slideshow-2 {
   display: block;
   margin-left: auto;
   margin-right: auto;
