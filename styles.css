@@ -11,7 +11,7 @@ body {
   height: 100%;
   overflow-wrap: break-word;
   color: black;
-  background: white;
+  background: #ebebeb;
   font-family: "hoefler", "Garamond", serif;
 }
 .dark-mode {
@@ -23,12 +23,11 @@ p {
   font-size: 24rem;
   overflow-x: wrap;
   width: 600px;
-  text-align: left;
+  text-align: left;theDoc.classList = 'dark-mode'
 }
 .theNavbar {
   color: #ffffff;
-  background: #000015;
-  font-size: 1.5em;
+  background: #0056b8;
 }
 a:hover{
   color:rgb(0, 132, 255);
