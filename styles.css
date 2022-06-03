@@ -4,12 +4,12 @@
 .half {
   width: 50%;
 }
-.top-content .carousel-control-prev {
+.top-content .carousel-control-prev .blue{
     font-size: 40px;
     color: #444;
 }
  
-.top-content .carousel-control-next {
+.top-content .carousel-control-next .blue {
     font-size: 40px;
     color: #444;
 }
