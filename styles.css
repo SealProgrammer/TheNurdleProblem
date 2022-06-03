@@ -28,6 +28,7 @@ p {
 .theNavbar {
   color: #ffffff;
   background: #000015;
+  font-size: 1.5em;
 }
 a:hover{
   color:rgb(0, 132, 255);
