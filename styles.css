@@ -4,6 +4,9 @@
 .half {
   width: 50%;
 }
+.blue {
+  color: blue;
+}
 body {
   float: left;
   left: 0px;
