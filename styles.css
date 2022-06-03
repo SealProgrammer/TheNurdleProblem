@@ -4,6 +4,19 @@
 .half {
   width: 50%;
 }
+.top-content .carousel-control-prev {
+    left: -110px;
+    border-bottom: 0;
+    font-size: 40px;
+    color: #444;
+}
+ 
+.top-content .carousel-control-next {
+    right: -110px;
+    border-bottom: 0;
+    font-size: 40px;
+    color: #444;
+}
 body {
   float: left;
   left: 0px;
