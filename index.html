@@ -167,16 +167,16 @@
           </a>
       </div>
     <script>
-      var theWebpage = document.body;
-      var match = window.matchMedia('(prefers-color-scheme: dark)'
-      function toggleMode() {
-        if(match) {
-          theWebpage.classList.toggle("dark-mode")
-        }
-      }
-      match.addEventListener('change', e => {
-        toggleMode(match.matches);
-      }
+//       var theWebpage = document.body;
+//       var match = window.matchMedia('(prefers-color-scheme: dark)'
+//       function toggleMode() {
+//         if(match) {
+//           theWebpage.classList.toggle("dark-mode")
+//         }
+//       }
+//       match.addEventListener('change', e => {
+//         toggleMode(match.matches);
+//       }
 if (window.matchMedia) {
   var match = window.matchMedia('(prefers-color-scheme: dark)')
   toggleDarkMode(match.matches);
@@ -189,7 +189,8 @@ if (window.matchMedia) {
       //let simpleCastPlayer = new URL(document.querySelector("#simpleCastPlayeriFrame").src);
       //simpleCastPlayer.searchParams.set("dark", state);
       //document.querySelector("#simpleCastPlayeriFrame").src = simpleCastPlayer.href;
-    document.write(state)
+    let theDoc = document.body
+    theDoc.classList.toggle('dark-mode')
   }
 }
     </script>
