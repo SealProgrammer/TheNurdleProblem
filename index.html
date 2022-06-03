@@ -166,5 +166,11 @@
             <span class="carousel-control-next-icon"></span>
           </a>
       </div>
+    <script>
+      var theWebpage = document.body;
+      if(window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        theWebpage.classList.toggle("dark-mode")
+      }
+    </script>
   </body>
 </html>
