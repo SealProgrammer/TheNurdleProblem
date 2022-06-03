@@ -10,13 +10,13 @@ body {
   width: 100%;
   height: 100%;
   overflow-wrap: break-word;
-  background: #010a1f;
-  color: #ffffff;
+  color: black;
+  background: white;
   font-family: "hoefler", "Garamond", serif;
 }
 .dark-mode {
-  background: #ffffff;
-  color: #010a1f;
+  color: #ffffff;
+  background: #010a1f;
 }
 p {
   color: rgb(255,255,255);
