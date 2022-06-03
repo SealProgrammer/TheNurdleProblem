@@ -34,11 +34,12 @@
   })
  
   function toggleDarkMode(state) {
-      //let simpleCastPlayer = new URL(document.querySelector("#simpleCastPlayeriFrame").src);
-      //simpleCastPlayer.searchParams.set("dark", state);
-      //document.querySelector("#simpleCastPlayeriFrame").src = simpleCastPlayer.href;
     let theDoc = document.body
-    theDoc.classList.toggle('dark-mode')
+    if(state) {
+      theDoc.classList = 'dark-mode'
+    } else {
+      theDoc.classList = 'light-mode'
+    }
   }
 }
 </script>
