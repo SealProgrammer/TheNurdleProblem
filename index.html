@@ -168,9 +168,30 @@
       </div>
     <script>
       var theWebpage = document.body;
-      if(window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        theWebpage.classList.toggle("dark-mode")
+      var match = window.matchMedia('(prefers-color-scheme: dark)'
+      function toggleMode() {
+        if(match) {
+          theWebpage.classList.toggle("dark-mode")
+        }
       }
+      match.addEventListener('change', e => {
+        toggleMode(match.matches);
+      }
+if (window.matchMedia) {
+  var match = window.matchMedia('(prefers-color-scheme: dark)')
+  toggleDarkMode(match.matches);
+ 
+  match.addEventListener('change', e => {
+      toggleDarkMode(match.matches);
+  })
+ 
+  function toggleDarkMode(state) {
+      //let simpleCastPlayer = new URL(document.querySelector("#simpleCastPlayeriFrame").src);
+      //simpleCastPlayer.searchParams.set("dark", state);
+      //document.querySelector("#simpleCastPlayeriFrame").src = simpleCastPlayer.href;
+    document.write(state)
+  }
+}
     </script>
   </body>
 </html>
