@@ -24,8 +24,23 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
 <script>
   $(document).ready(function() {
-  jQuery.fn.carousel.Constructor.TRANSITION_DURATION = 0
-});
+  jQuery.fn.carousel.Constructor.TRANSITION_DURATION = 0});
+  if (window.matchMedia) {
+  var match = window.matchMedia('(prefers-color-scheme: dark)')
+  toggleDarkMode(match.matches);
+ 
+  match.addEventListener('change', e => {
+      toggleDarkMode(match.matches);
+  })
+ 
+  function toggleDarkMode(state) {
+      //let simpleCastPlayer = new URL(document.querySelector("#simpleCastPlayeriFrame").src);
+      //simpleCastPlayer.searchParams.set("dark", state);
+      //document.querySelector("#simpleCastPlayeriFrame").src = simpleCastPlayer.href;
+    let theDoc = document.body
+    theDoc.classList.toggle('dark-mode')
+  }
+}
 </script>
   <body>
       <nav class="navbar navbar-expand-sm navbar-dark sticky-top" style = "background-color: rgb(0, 0, 120); font-size: 1.25em">
@@ -166,36 +181,5 @@
             <span class="carousel-control-next-icon"></span>
           </a>
       </div>
-    <script>
-//       var theWebpage = document.body;
-//       var match = window.matchMedia('(prefers-color-scheme: dark)'
-//       function toggleMode() {
-//         if(match) {
-//           theWebpage.classList.toggle("dark-mode")
-//         }
-//       }
-//       match.addEventListener('change', e => {
-//         toggleMode(match.matches);
-//       }
-if (window.matchMedia) {
-  var match = window.matchMedia('(prefers-color-scheme: dark)')
-  toggleDarkMode(match.matches);
- 
-  match.addEventListener('change', e => {
-      toggleDarkMode(match.matches);
-  })
- 
-  function toggleDarkMode(state) {
-      //let simpleCastPlayer = new URL(document.querySelector("#simpleCastPlayeriFrame").src);
-      //simpleCastPlayer.searchParams.set("dark", state);
-      //document.querySelector("#simpleCastPlayeriFrame").src = simpleCastPlayer.href;
-    let theDoc = document.body
-    theDoc.classList.toggle('dark-mode')
-  }
-}
-else {
-  document.write('oh noes')
-}
-    </script>
   </body>
 </html>
